@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------
+#  Fichiers produits par la compilation
+# ---------------------------------------------------------------------
+*.lst
+*.lbl
+*.map
+test_coups.prg
+test_ia.prg
+test_vitesse.prg
+test_positions.asm
+
+# ---------------------------------------------------------------------
+#  Sorties de test et fichiers temporaires
+# ---------------------------------------------------------------------
+*.png
+!images/*.png
+vice_test.log
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+*~
+
+# ---------------------------------------------------------------------
+#  ROMs Commodore : ne JAMAIS les publier
+#
+#  Les ROMs du PET (KERNAL, BASIC, editeur, generateur de caracteres)
+#  sont sous droits d'auteur et ne font pas partie de ce projet. Il faut
+#  se les procurer soi-meme, le README explique ou. Cela vaut aussi pour
+#  les EPROM francaises et les images cassette qui en contiennent.
+# ---------------------------------------------------------------------
+*.bin
+*.rom
+characters*
+chargen*
+kernal*
+basic*
+edit-4*
+
+# Images cassette de travail : certaines contiennent le generateur de
+# caracteres de la machine, donc une ROM. Seule dames.tap, qui ne porte
+# que le jeu, est publiee (en piece jointe de la release).
+CHAR.tap
+caract.tap
+pion.tap
+bdames.tap
+
+# ---------------------------------------------------------------------
+#  Binaires du jeu : distribues par les releases, pas dans le depot
+# ---------------------------------------------------------------------
+dames.prg
+dames.d64
+dames.tap
